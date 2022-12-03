@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Let's Make Mini Soccer Team</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope&family=Nunito:ital,wght@1,200&family=Outfit:wght@600&family=Poppins:wght@400;500;600;700&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind initial -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind font customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Berkshire Swash'],
+                        'serif': ['manrope']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-900">
+    <header>
+        <!-- start slider -->
+
+        <section class="grid grid-cols-8 gap-4 bg-gray-900 text-white">
+
+            <!-- left pic -->
+
+            <section class="col-span-2 mt-24 leftSidePicture">
+                <img src="image/Mask Group.png">
+            </section>
+
+            <!-- center content -->
+
+            <section class="col-span-4 text-center mt-36">
+                <h1 class="font-sans text-5xl text-orange-600">Let's Make Mini Soccer Team</h1>
+                <div class="float-right">
+                    <img src="image/Line Marker.png" alt="">
+                </div>
+                <br>
+                <br>
+                <p class="font-serif text-xl text-justify">This is a mini soccer team contains of 5 members. You
+                    can see
+                    their goals
+                    and assists and also can
+                    generate the player cost, manager cost and coach cost. Using this website you can easily build a
+                    soccer team within your budget.</p>
+            </section>
+
+            <!-- team logo -->
+
+            <section class="mt-24">
+                <img src="image/Card-psg.png" alt="">
+            </section>
+
+            <!-- right picture -->
+
+            <section class="sliderFootball">
+                <div class="mt-72 ml-4">
+                    <img src="image/soccer-goal-top-png-8 4.png" alt="">
+                </div>
+
+            </section>
+
+            <!-- slider end -->
+    </header>
+    <main>
+        <section class="grid grid-rows-2 font-serif w-3/4 mx-auto my-12 text-white">
+
+            <!-- row one -->
+            <section class="grid grid-cols-4 grid-flow-col gap-4 mb-4">
+                <!-- col-1 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/messi.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Lionel Messi</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>36 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>120 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect1">select</button>
+                </section>
+
+                <!-- col-2 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/neymar.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Neymar Jr.</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>33 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>110 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect2">select</button>
+                </section>
+
+                <!-- col-3 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/mbappe.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Kylian Mbappé</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>30 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>100 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect3">select</button>
+                </section>
+                <!-- col-4 -->
+                <section class="border border-black border-1 bg-zinc-900">
+                    <h1 class="text-center text-3xl mt-6">Selcted-V</h1>
+                    <img src="image/Ureg-Ureg Marker.png" alt="" class="w-3/4 m-auto">
+                    <ol class="text-white mt-12 px-12" id="orderList">
+                        <!-- <li class="text-lg my-3 list">Lionel Messi</li> -->
+
+                    </ol>
+
+                </section>
+            </section>
+
+            <!-- row two -->
+            <section class="grid grid-cols-4 grid-flow-col gap-4 mb-4">
+                <!-- col-1 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/vitor.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Vítor Machado</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>27 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>90 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect4">select</button>
+                </section>
+
+                <!-- col-2 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/ramos.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Sergio Ramos</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>24 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>80 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect5">select</button>
+                </section>
+
+                <!-- col-3 -->
+                <section class="border border-slate-400 border-1 bg-zinc-900">
+                    <img src="image/renato.png" alt="">
+                    <p class="text-center text-2xl font-semibold mt-5">Renato Sanches</p>
+                    <div class="px-6 pb-2 flex">
+                        <div class="float-left mt-6">
+                            <p>21 goals</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl px-3">.</p>
+                        </div>
+                        <div class="float-right mt-6">
+                            <p>70 assists</p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-400 w-3/4 m-7 p-2 btn-select" id="btnSelect6">select</button>
+                </section>
+                <!-- col-4 -->
+                <section class="border border-black border-1 bg-zinc-900">
+
+                    <h1 class="text-center text-3xl mt-3">Budget</h1>
+                    <img src="image/Ureg-Ureg Marker.png" alt="" class="w-3/4 m-auto mb-4">
+                    <div class="px-2">
+                        <div class="mb-2">
+                            <label for="per_player" class="float-left">Per Player : </label>
+                            <input type="number" class='w-1/2 h-8 float-right text-black' id="txtPricePerPlayer" />
+                        </div>
+                        <button class="bg-blue-400 w-3/4 m-4 p-2" id="btnCalculate">Calculate</button>
+
+                        <div class="mb-3">
+                            <label for="player_expense">Player Expenses : </label>
+                            <label for="player_expense_amount">$<span id="playerExpense">0</span></label>
+                        </div>
+
+                        <!-- manager expense -->
+                        <div class="mb-16">
+                            <label for="per_player" class="float-left">Manager : </label>
+                            <input type="number" class='w-1/2 h-8 float-right text-black' id="txtPriceForManager" />
+                        </div>
+
+                        <!-- coach expense -->
+                        <div class="mb-4">
+                            <label for="per_player" class="float-left">Coach : </label>
+                            <input type="number" class='w-1/2 h-8 float-right text-black' id="txtPriceForCoach" />
+                        </div>
+
+                        <button class="bg-blue-400 w-3/4 m-4 p-2" id="btnTotalCalculation">Calculate Total</button>
+
+                        <div class="mx-12 mb-12">
+                            <label for="total_expense" class="float-left">Total : </label>
+                            <label for="total_expense_amount" class="float-right">$<span
+                                    id="totalExpense">0</span></label>
+                        </div>
+
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
